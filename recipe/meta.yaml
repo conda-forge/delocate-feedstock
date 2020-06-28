@@ -31,7 +31,7 @@ test:
 
 about:
   home: https://github.com/matthew-brett/delocate
-  license: BSD 2-Clause
+  license: BSD-2-Clause
   license_family: BSD
   license_file: LICENSE
   summary: Move OSX dynamic libraries into package
