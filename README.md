@@ -3,9 +3,9 @@ About delocate
 
 Home: https://github.com/matthew-brett/delocate
 
-Package license: BSD 2-Clause
+Package license: BSD-2-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Move OSX dynamic libraries into package
 
