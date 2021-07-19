@@ -1,4 +1,4 @@
-{% set version = "0.8.2" %}
+{% set version = "0.9.0" %}
 
 package:
   name: delocate
@@ -7,10 +7,10 @@ package:
 source:
   fn: delocate-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/d/delocate/delocate-{{ version }}.tar.gz
-  sha256: 8c7e2f941b9613a1137c1cbde17e5956394ee4fa4a69d2897025275e69018c6a
+  sha256: fa71952921af4910163e8de7c36290e5bc94cb3c3bce4ea00fe327a19f313eba
 
 build:
-  number: 4
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
@@ -21,6 +21,7 @@ requirements:
   run:
     - python >=3.6
     - wheel
+    - six
 
 test:
   imports:
