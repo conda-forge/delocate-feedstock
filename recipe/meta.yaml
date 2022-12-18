@@ -1,4 +1,4 @@
-{% set version = "0.10.3" %}
+{% set version = "0.10.4" %}
 
 package:
   name: delocate
@@ -7,7 +7,7 @@ package:
 source:
   fn: delocate-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/d/delocate/delocate-{{ version }}.tar.gz
-  sha256: 78c2c555c27f309455e4018aec47675aec2ed2eca2976ad8828fac2ec0de934c
+  sha256: eae712f46f23481ac82250b9dc357280b8cd17ac0e57dce08654d5f722793c93
 
 build:
   number: 0
