@@ -10,7 +10,7 @@ source:
   sha256: fbf650d3cb45db7c02ec8c3c3ae546310415f845594871623f7561c96f140f0b
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
@@ -20,8 +20,6 @@ requirements:
     - python >=3.6
   run:
     - python >=3.6
-    - wheel
-    - six
     - packaging
     - typing-extensions
 
