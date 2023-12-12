@@ -23,6 +23,7 @@ requirements:
     - wheel
     - six
     - packaging
+    - typing-extensions
 
 test:
   imports:
