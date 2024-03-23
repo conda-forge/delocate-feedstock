@@ -22,6 +22,7 @@ requirements:
     - python >=3.6
     - packaging
     - typing-extensions
+    - macholib
 
 test:
   imports:
