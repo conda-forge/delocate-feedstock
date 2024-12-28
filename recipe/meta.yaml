@@ -6,26 +6,28 @@ package:
 
 source:
   fn: delocate-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/d/delocate/delocate-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/d/delocate/delocate-{{ version }}.tar.gz
   sha256: e051660836a87b61c99b9b180344be363c31e1f2d9fdc94caebc854b6611335c
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
     - setuptools
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - packaging
     - typing-extensions
     - macholib
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - delocate
   commands:
